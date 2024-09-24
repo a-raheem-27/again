@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="music-disc" id="music-disc"></div>
+            <h3 id="song-title">Now Playing: Song Title</h3>
+            <audio id="audio" src="music1.mp3"></audio>
+
+            <div class="time-info">
+                <span id="current-time">0:00</span>
+                <input type="range" id="seek-bar" value="0">
+                <span id="total-time">0:00</span>
+            </div>
+
+            <div class="controls">
+                <button id="prev-btn">Previous</button>
+                <button id="play-btn" onclick="togglePlay()">&#9654;</button> <!-- Play Icon initially -->
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
